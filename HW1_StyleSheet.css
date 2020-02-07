@@ -1,0 +1,100 @@
+body{
+    background-color:lightblue;
+}
+
+#favQuote{
+    font-size:45pt;
+    font-weight:bold;
+    font-style: italic;
+    text-align: center;
+}
+
+h1{
+    color:white;
+    font-size:70;
+}
+
+a{
+    color: #213DBE;
+}
+
+a:hover{
+    color:blueviolet;
+}
+
+hr{
+    border: 2px dotted blue;
+}
+
+.tab{
+    border:none;
+    background-color:inherit;
+    text-align: center;
+}
+#profilePic{
+    width:350px; 
+    height:auto; 
+    margin-right: auto;
+    margin-left: auto;
+    float:left; 
+    padding-left: 50
+}
+
+.tab button{
+    border: none;
+    background-color: inherit;
+    color:white;
+    font-size: 30px;
+}
+
+#thCustom{
+    text-align: left;
+    font-size:30;
+    padding:5px;
+}
+#tdCustom{
+    padding-left: 150px;
+    font-size:30;
+}
+
+#ProjTable,#ProjTd,#ProjTh{
+    border:1px solid black;
+    border-collapse: collapse;
+    font-size:18pt;
+}
+
+#ProjTable{
+    margin-top:5%;
+    width:100%;
+}
+
+
+#StyleA{
+    border:1px solid black;
+}
+
+#favsStyle{
+    background-color:#3d87f5;
+    margin-top: 20px;
+    flex-basis: 55%;
+    border-radius: 25px;
+}
+
+#favsBlock{
+    display:flex;
+    text-align: center;
+    clear:both;
+}
+
+#otherFavs{
+    background-color: #ff7373;
+    border-radius:25px;
+    margin-top: 20px;
+    flex-basis: 33%%;
+    padding:20px;
+}
+.boldRed{
+    color: red;
+    font-weight: bold;
+}
+
