@@ -1,0 +1,117 @@
+#Name{
+    font-size:30pt;
+    color:blue;
+}
+
+li{
+    color:black;
+    font-size:15pt;
+    font-weight: normal;
+    margin-left: 5%
+}
+
+#SubCatagories{
+    font-size:25pt;
+    color: cyan;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+}
+
+#favQuote{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35pt;
+    font-style:italic;
+}
+
+hr{
+    border:3px dotted blue;
+}
+
+#profilePic{
+    width:350px;
+    height:auto;
+    float: left;
+}
+
+a:hover{
+    color:blueviolet;
+}
+
+a{
+    color:blue;
+}
+
+#bio{
+    font-size: 20pt;
+}
+
+.tab{
+    border:none;
+    background-color:inherit;
+    text-align: center;
+}
+
+.tab button{
+    border: none;
+    background-color: inherit;
+    color:white;
+    font-size: 30px;
+}
+
+#thCustom{
+    text-align: left;
+    font-size:20pt;
+    padding:5px;
+}
+
+li{
+    font-size: 18pt
+}
+#tdCustom{
+    padding-left: 150px;
+    font-size:30;
+}
+
+#ProjTable,#ProjTd,#ProjTh{
+    border:1px solid black;
+    border-collapse: collapse;
+    font-size:18pt;
+}
+
+#ProjTable{
+    margin-top:5%;
+    width:100%;
+}
+
+
+#StyleA{
+    border:1px solid black;
+}
+#favsBlock{
+    display:flex;
+    margin-top: 20px;
+}
+#favsStyle{
+    flex-basis: 55%;
+    background-color: #2243b8;
+    border-radius:25px;
+}
+
+#otherFavs{
+    flex-basis: 33%;
+    background-color: #ff837b;
+    border-radius:25px;
+}
+
+.boldRed{
+    color:red;
+    font-weight:bold;
+}
+
