@@ -1,0 +1,16 @@
+input[type=text]{
+    height:60px;
+    position: absolute;
+    font-family: "Times New Roman", serif;
+}
+
+#calender{
+    border: 1px solid black;
+    background-color: darkturquoise;
+    align-self: center;
+    margin: auto;
+}
+
+tr,td,th{
+    border: 1px solid black;
+}
