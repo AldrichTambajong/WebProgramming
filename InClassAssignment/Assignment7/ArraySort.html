@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Array Sort</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+            var i,j;
+            
+            function sort(arr){
+                for(i = 0; i <  arr.length-1; i++){
+                    var least = i;
+                
+                    for(j = i + 1; j < arr.length; j++){
+                        if(arr[j] < arr[least]){
+                            least = j;
+                        }
+                    }
+                    var temp = arr[i];
+                    arr[i] = arr[least];
+                    arr[least] = temp;
+                }   
+            }
+            sort(arr1);
+            document.write(arr1);
+        </script>
+    </body>
+</html>

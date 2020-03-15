@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Find Mode</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+            var mode,modeCount=0,i,j;
+            
+            function findMode(arr){
+                for(i = 0;i < arr.length;i++){
+                    var tempMode = arr[i], tempCount = 0;
+                    
+                    for(j = 0;j<arr.length;j++){
+                        if(arr[j] == tempMode){
+                           tempCount++;
+                        }
+                    }
+                    
+                    if(tempCount > modeCount){
+                        mode = tempMode;
+                        modeCount = tempCount;
+                    }
+                }
+                
+                document.write(mode + " (" + modeCount + " times)");
+            }
+            findMode(arr1);
+        </script>
+    </body>
+</html>

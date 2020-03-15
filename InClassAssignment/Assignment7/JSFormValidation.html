@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Javascript Form Validation</title>
+        <link rel="stylesheet" href="Assignment7StyleSheet.css">
+        <script type="text/javascript">
+            function validation(){
+                var id = document.forms["input"]["id"].value,
+                    firstName = document.forms["input"]["first"].value,
+                    lastName = document.forms["input"]["last"].value;
+                
+                var errorArr = [];
+                var alertString = "";
+                    if(id == "" || firstName == "" || lastName == ""){
+                        document.getElementById("correctId").innerHTML = "";
+                        document.getElementById("correctFirst").innerHTML = "";
+                        document.getElementById("correctLast").innerHTML = "";
+                        document.getElementById("idError").innerHTML = "";
+                        document.getElementById("fNameError").innerHTML = "" ;
+                        document.getElementById("lNameError").innerHTML = "";
+                           if(id == ""){
+                                errorArr.push("id");
+                                document.getElementById("idError").innerHTML = "Please Enter an ID";
+                            }
+                               
+                            if(firstName == ""){
+                                errorArr.push("firstName");
+                                document.getElementById("fNameError").innerHTML = "Please Enter a First Name";
+                            }
+                            
+                            if(lastName == ""){
+                                errorArr.push("lastName");
+                                document.getElementById("lNameError").innerHTML = "Please Enter a Last Name";
+                            }
+                            
+                        for(var i = 0; i < errorArr.length; i++){
+                            alertString = alertString.concat(errorArr[i]) + ", "; 
+                        }
+                        alert("You forgot to fill in the folowing field(s): " + alertString);
+                        return false;
+                    }
+                    else{
+                        document.getElementById("idError").innerHTML = "";
+                        document.getElementById("fNameError").innerHTML = "" ;
+                        document.getElementById("lNameError").innerHTML = "";
+                        
+                        document.getElementById("correctId").innerHTML = "ID: " +id;
+                        document.getElementById("correctFirst").innerHTML = "First Name: " + firstName;
+                        document.getElementById("correctLast").innerHTML = "Last Name: " + lastName;
+                        return false;
+                        
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <div class= "inputDiv">
+            <form name="input" method="post" onSubmit="return validation()">
+                <label class="error" id="idError" style="color: red; text-decoration: underline"></label>
+                <div class="contentDiv">
+                    <label>ID: </label>
+                    <input class = "inputs" type="text" name="id">
+                </div>
+                <br><br>
+                
+                
+                <label class="error" id="fNameError" style="color: red; text-decoration: underline"></label>
+                <div class="contentDiv">
+                    <label>First Name: </label>
+                    <input class = "inputs" type= "text" name="first">
+                </div>
+                <br><br>
+                
+                <label class="error" id="lNameError" style="color: red; text-decoration: underline"></label>
+                <div class="contentDiv">
+                    <label>Last Name: </label>
+                    <input class = "inputs" type = "text" name="last">
+                </div>
+                <br><br>
+                <input  type="submit" name="Add" value="Add">
+            </form>
+            <br><br><br><br>
+            <div class="output">
+                <label id="correctId"></label><br>
+                <label id="correctFirst"></label><br>
+                <label id="correctLast"></label><br>
+            </div>
+        </div>
+    </body>
+</html>

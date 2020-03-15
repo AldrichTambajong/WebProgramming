@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Fibonacci Series</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var a = 0, b=1,c,i,num;
+            var num = prompt("Enter number of terms of the series ",0);
+
+            if(num == 0){
+               document.write();
+            }
+            else if(num == 1){
+               document.write(a);
+            }
+            else if(num == 2){
+                document.write(a + "<br>" +b);
+            }
+            else{
+                document.write(a + "<br>" +b +"<br>");
+                for( i=3; i <= num;i++){
+                   c = a + b;
+                   a = b;
+                   b = c;
+                    document.write(c+"<br />");
+                }  
+            }
+        </script>
+    </body>
+</html>

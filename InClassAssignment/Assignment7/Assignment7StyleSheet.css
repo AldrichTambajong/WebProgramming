@@ -1,0 +1,34 @@
+.inputDiv{
+    width: 35%;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.contentDiv{
+    margin: auto;
+    text-align: left;
+    width:100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.inputs{
+    float: right;
+    padding-bottom: none;
+    margin: auto;
+    margin-top: auto;
+}
+
+.error{
+    float: right;
+    display: block;
+    flex-basis: auto;
+}
+
+.output{
+    
+}

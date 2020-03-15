@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: #FF441C;
+}
+
+.orderDiv{
+    border: 1px solid black;
+    width:80%;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orderBody{
+    background-color: gray;
+}
+
+img{
+    width: 400px;
+    height: auto;
+}
