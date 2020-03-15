@@ -37,7 +37,7 @@ elseif(isset($_POST['reset'])){
         <title>Login</title>
         <link rel="stylesheet" href="ProjSheet.css">
     </head>
-    <body>
+    <body id="body3">
         <div class="welcome">
             <h1>Welcome to ClickIt.com</h1>
         </div>

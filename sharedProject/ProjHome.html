@@ -2,8 +2,32 @@
     <head>
         <Title>Clickit.com</Title>
         <link rel="stylesheet" href="ProjSheet.css">
+        
+    <script>
+      var countDown = new Date("April 27, 2020 12:45:00").getTime(); 
+      var x = setInterval(function() {
+
+      var current = new Date().getTime();
+      var distance = countDown - current;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s " + "until the end of this semester";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+        
     </head>
     <body>
+        
 <!--I don't know if you want to use images or just link names for the tabs-->
         <div id="header">
             <a href=""><img id="amazonlogo" alt="Amazon Logo" src="amazonlogo.png"></a>
@@ -39,13 +63,14 @@
             <h2>Auto Suggestion</h2>
             Based on your purchase history here are some reccomendations for you:
             <br><br>
-            <div class="autoContent"><img class="imgAuto" src="phone.jpg" alt="iPhone"> Cell Phones</div>
-            <div class="autoContent"><img class="imgAuto" src="macbook.jpg" alt="Macbook">Laptops</div>
+            <div class="autoContent"><img class="imgAuto" src="phone.jpg" alt"iPhone"> Cell Phones</div>
+            <div class="autoContent"><img class="imgAuto" src="macbook.jpg" alt"Macbook">Laptops</div>
             <br>
             <div class="autoContent"><img class="imgAuto" src="tv.jpg" alt"TV">TV's</div>
-            <div class="autoContent"><img class="imgAuto" src="airpods.jpg" alt="Airpods">Earphones</div>
+            <div class="autoContent"><img class="imgAuto" src="airpods.jpg" alt"Airpods">Earphones</div>
             <br> <br>
-            <a href="https://youtu.be/VFf6KeKvnUc">Mini Project 1, Video</a>
+            <a href="https://youtu.be/VFf6KeKvnUc">Mini Project 2, Video</a>
+            <p id="countdown"></p>
         </div>
     </body>
 </html>

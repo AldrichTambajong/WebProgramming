@@ -42,7 +42,7 @@ th{
     float:left;
     width:15%;
     margin-top: 10%;
-    box-shadow: 5px 10px orange;
+    box-shadow: 3px 3px 5px orange;
 }
 
 #searchBar{
@@ -70,7 +70,7 @@ ul.a {
     margin: auto;
     margin-top: 4%;
     text-align: center;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 3px 3px 5px orange;
     margin-bottom: 3%;
 }
 
@@ -90,6 +90,7 @@ ul.a {
     margin-top: inherit;
     height: 100%;
     text-align: center;
+    background-color: #fff4ed;
 }
 
 .autoContent{
@@ -151,11 +152,12 @@ ul.a {
     color: white;
     font-weight: bolder;
     display: inline;
+    text-shadow: 1px 1px #e35800;
 }
 
 #contained{
     border: 1px solid grey;
-    background-color: F3F3F3;
+    background-color: #dceffa;
 }
 
 /*Cart*/
@@ -164,6 +166,7 @@ ul.a {
     margin-top:30%;
     margin: 20%;
     clear: both;
+    background-color: #ffdfcc;
 }
 
 #itemImg{
@@ -259,25 +262,36 @@ ul.b {
     margin-bottom: 5%;
 }
 
+#bodyforitems{
+    background-color: #cbe4f2;
+}
+
 /*Login*/
 .welcome{
     text-align: center;
     margin: auto;
+    color: #17212c;
 }
 .login{
     border: 1px solid black;
-    
     width: 50%;
     margin: auto;
     text-align: center;
+    background-color: #dbf2ff;
+    color: #17212c;
 }
 
 .loginInputs{
     text-align: center;
     margin: auto;
+    background-color: #dbf2ff;
 }
 
 .error{
     color: red;
     text-decoration: underline;
+}
+
+#body3{
+    background-color: #fff4ed;
 }
