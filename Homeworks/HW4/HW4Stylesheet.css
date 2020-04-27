@@ -1,0 +1,23 @@
+/*Part2*/
+.guess{
+    text-align: center;
+}
+
+/*Part 3*/
+.matchingHeader{
+    position: absolute;
+}
+
+.matchingTd,.matchingTr{
+    border: 1px solid black;
+}
+.matchingTable{
+    width: 90%;
+    margin: auto;
+}
+.matchingTd{
+    height: 150px;
+    width:auto;
+    text-align: center;
+    font-size: 20;
+}

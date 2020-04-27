@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>SQL Screenshots</title>
+    </head>
+    
+    <body>
+        <ol>
+            <li>SELECT ProductName, QuantityPerUnit;
+                FROM Products;<br>
+                <img src="Question1.png"></li><br>
+            <li><img src="Question2.png"></li><br>
+            <li>SELECT productName,quantityPerUnit FROM Products;<br><img src="Question3.png"></li><br>
+            <li>SELECT productId,productName FROM Products where discontinued = "False" order by productId;<br><img src="Question4.png"></li><br>
+            <li>SELECT productId,productName FROM Products where disconinued = 1;<br><img src="Question5.png"></li><br>
+            <li>
+                <ol>
+                    <li>select productName,unitPrie FROM Proucts order by unitPrice<img src="Question6A.png"></li>
+                    <br>
+                    <li>SELEcT productName, unitPrice FROM products order by unitPrice desc<img src="Question6D.png"></li>
+                </ol>
+            </li><br>
+            <li><label>SELECT productId,productName,unitPrice FROM Products WHERE unitPrice &lt; 20 AND discontinued =0 ORDER BY productId;</label><img src="Question7.png"></li><br>
+            <li>SELECT productId,productName,unitPrice FROM Products WHERE unitPrice &ge; 15 AND unitPrice &le; 25 ORDER BY productId;<img src="Question8.png"></li><br>
+            <li>SELECT produtName,unitPrice FROM Products WHERE unitPrice &gt; (SELECT avg(unitPrice) FROM Products) ORDER BY unitPrice;<img src="Question9.png"></li><br>
+            <li>SELECT productName, unitPrice FROM Products AS a WHERE 10 &ge; (SELECT COUNT(DISTINCT unitPrice) FROM Products AS b WHERE b.unitPrice &ge; a.unitPrice) ORDER BY unitPrice;
+                <img src="Question10.png"></li><br>
+            <li>SELECT COUNT(productName) FROM Products GROUP BY discontinued;<br><img src="Question11.png"></li><br>
+            <li>SELECT productName,unitsOnOrder,unitsInStock FROM Products WHERE unitsInStock &lt; unitsOnOrder;<br><img src="Question12.png"></li><br>
+        </ol>
+    </body>
+</html>

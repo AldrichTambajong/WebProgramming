@@ -1,0 +1,62 @@
+/*LandingPage*/
+.body{
+    background-color: #FFA039;
+}
+
+.heading{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.container{
+    overflow: hidden;
+    border: 3px solid black;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.purchases{
+    width:45%;
+    height:auto;
+    background-color: white;
+    float: left;
+    margin: auto;
+}
+
+.records{
+    width:45%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    float: right;
+}
+
+.tabs a{
+  background-color: white;
+  display: inline-block;
+  align-content: center;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+
+
+/*New Purchase*/
+#newPurchase{
+    text-align: center;
+    width: 50%;
+    background-color: silver
+}
+
+#newPurchaseBody{
+    text-align: center;
+}

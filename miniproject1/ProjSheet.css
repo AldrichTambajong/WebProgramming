@@ -1,0 +1,330 @@
+img{
+    width:50px;
+    height: 50px;
+    padding:1%;
+}
+
+table,td,tr{
+    border:1px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+table{
+    width: 100%;
+}
+
+.special tr:nth-child(even){
+    background-color: #f5e3c2;
+}
+
+tr{
+    width:auto;
+}
+
+td{
+    text-align: center;
+    width: auto;
+    table-layout: fixed;
+}
+th{
+    width: auto;
+    text-align: left;
+    padding-right: 10%;
+}
+
+/*Home Page*/
+#header{
+    background-color: #17212c;
+    width:100%;
+    margin: 0;
+    text-align: end;
+}
+
+#categories{
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: inherit;
+    height: 60%;
+    position: absolute;
+    margin: auto;
+    float:left;
+    width:18%;
+    margin-top: 10%;
+    box-shadow: 3px 3px 5px orange;
+}
+
+#searchBar{
+    width:100%;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+#websiteName{
+    border: 1px solid black;
+    width:30%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#search{
+    border:1px solid black;
+    width:30%;
+    height:5%;
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+    box-shadow: 3px 3px 5px orange;
+    margin-bottom: 3%;
+}
+
+#h3B{
+    margin: auto;
+}
+
+#h3C{
+    margin: auto;
+    float: left;
+}
+
+#autoSuggestion{
+    border: 1px solid black;
+    margin: auto;
+    width: 50%;
+    margin-top: inherit;
+    height: auto;
+    text-align: center;
+    background-color: #fff4ed;
+    position: sticky;
+}
+
+.autoContent{
+    display: inline-block; 
+    width:200px; 
+    border:1px solid; 
+    vertical-align:top;
+}
+
+.imgAuto{
+    width: 185px;
+    height: 185px;
+}
+
+.pageHeader{
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: -15%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-spacing: inherit;
+}
+
+#amazonlogo{
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    margin-top: 1%;
+}
+
+/*Profile*/
+
+#picDiv{
+    text-align: center;
+    margin-top: 7%;
+}
+
+#profile{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 175px;
+    height: 175px;
+    margin-bottom: -10%;
+}
+
+#infoDiv{
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+    height: 100%;
+}
+
+#headerAbout{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    display: inline;
+    text-shadow: 1px 1px #e35800;
+}
+
+#contained{
+    border: 1px solid grey;
+    background-color: #dceffa;
+}
+
+/*Cart*/
+
+#cartDiv{
+    margin-top:30%;
+    margin: 20%;
+    clear: both;
+    background-color: #ffdfcc;
+}
+
+.cartTable{
+    overflow: hidden;
+    background-color: #ffdfcc;
+}
+
+
+.itemImg{
+    width:200px;
+    height: auto;
+    float: left;
+    clear: both;
+}
+
+ul.b {
+  list-style-type: circle;
+   text-align: left;
+}
+
+.price{
+    font-weight: bold;
+    color: #B12704;
+}
+
+#bestseller{
+    float:left;
+    object-position: left;
+    margin-top: -1%;
+    margin-left: -1%;
+    width: 100px;
+    height: 30px;
+}
+
+
+/*Item*/
+
+#itemDiv{
+    border: 1px solid black;
+    width:auto;
+    height:200px;
+    flex-basis: auto;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+#itemImg{
+    float:left;
+    width:200px;
+    height:200px;
+    margin-right:auto;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    display: inline;
+}
+
+#itemName{
+    float: left;
+    flex-wrap: wrap;
+    margin-top: inherit;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    border:1px solid black;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #f7f7f7;
+    align-content: center;
+    text-align:center;
+}
+
+#reviews{
+    border:1px solid black;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%
+}
+
+.stars{
+    width: 80px;
+    height: 25px;
+    display: inline;
+    white-space:nowrap;
+    margin-bottom: -2%;
+}
+
+.reviewer{
+    background-color: #f5e3c2;
+    border-style: ridge;
+}
+
+#video{
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    
+}
+
+#bodyforitems{
+    background-color: #cbe4f2;
+}
+
+/*Login*/
+.welcome{
+    text-align: center;
+    margin: auto;
+    color: #17212c;
+}
+.login{
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #dbf2ff;
+    color: #17212c;
+}
+
+.loginInputs{
+    text-align: center;
+    margin: auto;
+    background-color: #dbf2ff;
+}
+
+.error{
+    color: red;
+    text-decoration: underline;
+}
+
+#body3{
+    background-color: #fff4ed;
+}
+
+#createAccount{
+    text-align: center;
+}
+
+/*SearchHist*/
+.histTh{
+    text-align: center;
+    border: 1px solid black;
+    background-color: #FF9900;
+}
+
+.checkboxTh{
+    width:5%;
+}

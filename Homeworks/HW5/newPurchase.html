@@ -1,0 +1,19 @@
+<htmL>
+    <head>
+        <title>New Purchase</title>
+        <link rel="stylesheet" href="website.css">
+    </head>
+    <body class="body" id="newPurchaseBody">
+        <h1>Enter Require Information:</h1>
+        <div class="container" id="newPurchase">
+            <form method="post" action="update.php">
+            <label>Supplier ID:</label><br><input type="text" name="supplierID" pattern="[A-Za-z0-9]{4}"><br>
+            <label>Purchase Date:</label><br><input type="date" name="purchaseDate"><br>
+            <label>Quantity:</label><br><input type="number" name="quantity"><br>
+            <label>Item Description:</label><br><input type="text" name="itemDescription"><br>
+            <label>Unit Price:</label><br><input type="number" name="unitPrice"><br><br><br>
+            <input type="submit">
+        </form>
+        </div>
+    </body>
+</htmL>

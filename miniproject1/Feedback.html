@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="ProjSheet.css" type="text/css">
+        
+        <script type="text/javascript">
+            function confirmIt() {
+                if(confirm("Are you sure you want to submit?") ) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body id="bodyforitems">
+        <div id="header">
+            <a href=""><img id="amazonlogo" alt="Amazon Logo" src="amazonlogo.png"></a>
+            <a href="ProjHome.php"><img alt="home" src="gohome.png"></a>
+            <a href="Cart.html"><img alt="cart" src="shopcart.png"></a>
+            <span id="headerAbout">
+            <h1>Customer Feedback Survey</h1>
+            </span>
+        </div>
+        
+        <div id="createAccount">
+            <form name="feedback" method="post" onsubmit="return confirmIt()" action="Response.php">
+                <table>
+                    <tr>
+                        <th><label>Rate our Site!</label></th>
+                        <td>
+                            <input type="radio" id="5 Stars" name="rating" value="5" required>
+                            <label for="5 Stars">5 Stars</label><br>
+                            <input type="radio" id="4 Stars" name="rating" value="4">
+                            <label for="4 Stars">4 Stars</label><br>
+                            <input type="radio" id="3 Stars" name="rating" value="3">
+                            <label for="3 Stars">3 Stars</label><br>
+                            <input type="radio" id="2 Stars" name="rating" value="2">
+                            <label for="2 Stars">2 Stars</label><br>
+                            <input type="radio" id="1 Stars" name="rating" value="1">
+                            <label for="1 Stars">1 Stars</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>Would you recommended this website to a friend?</label></th>
+                        <td>
+                            <input type="radio" id="Yes" name="rec" value="Yes" required>
+                            <label for="Yes">Yes</label><br>
+                            <input type="radio" id="No" name="rec" value="No">
+                            <label for="No">No</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>First and Last Name</label></th>
+                        <td><input type="text" name="firstLast" pattern="[A-Za-z ]{4,}" style="width:500px;height:20px"  placeholder="First and Last Name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Any other comments?</label></th>
+                        <td><input type="text" name="comments" style="width:500px;height:60px"></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="Submit Survey">
+            </form>
+        </div>
+    </body>
+</html>

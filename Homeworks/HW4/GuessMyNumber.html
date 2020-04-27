@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Guess My Number</title>
+        <link rel="stylesheet" href="HW4Stylesheet.css">
+        <script src="NumberGuess.js"></script>
+    </head>
+    <body onload="time()">
+        <div class="guess">
+            <div id="time"></div><br><br>
+            <input type="number" name ="number" id="number"><br>
+            <button type="submit" onclick="hint()" name="Guess">Guess</button><br>
+            <label name="num" id ="num">This will change to actual number after hitting "Guess"</label><br>
+            <label name="guesses" id="guesses"></label><br>
+            <label name="error" id="error"></label> 
+        </div>
+    </body>
+</html>

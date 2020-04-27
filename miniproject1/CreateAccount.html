@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" href="ProjSheet.css" type="text/css">
+        
+        <script type="text/javascript">
+            function validate(){
+                var passwordConfirm = document.forms["account"]["passwordConfirm"].value;
+                var password = document.forms["account"]["password"].value;
+                
+                var emptyArr = [];
+                var emptyString = "";
+                
+                if(passwordConfirm != password){
+                    alert("Please make sure the passwords match.");
+                    return false;
+                }
+                
+            }
+        </script>
+    </head>
+    <body id="bodyforitems">
+        <div id="header">
+            <a href=""><img id="amazonlogo" alt="Amazon Logo" src="amazonlogo.png"></a>
+            <a href="Cart.html"><img alt="cart" src="shopcart.png"></a>
+            <a href="AccountInfo.html"><img alt="account" src="user.png"></a>
+            <span id="headerAbout">
+            <h1>Create Account</h1>
+            </span>
+        </div>
+        
+        <div id="createAccount">
+            <form name="account" method="post" onsubmit="return validate()" action="userInformation.php">
+                <table>
+                    <tr>
+                        <th><label>Username:</label></th>
+                        <td><input type="text" name="username" pattern="[A-Za-z0-9]{4,}" style="width:500px;height:20px"  placeholder="Username"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Password:</label></th>
+                        <td><input type="password" name="password" pattern=".{5,}" style="width:500px;height:20px"  placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Confirm Password:</label></th>
+                        <td><input type="password" name="passwordConfirm" pattern=".{5,}" style="width:500px;height:20px"  placeholder="Confirm Password"></td>
+                    </tr>
+                    <tr>
+                        <th><label>First and Last Name:</label></th>
+                        <td><input type="text" name="firstLast" pattern="[A-Za-z ]{4,}" style="width:500px;height:20px"  placeholder="First and Last Name"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label>Shipping Address: </label></th>
+                        <td><input type="text" name="shipping" style="width:500px;height:20px" placeholder="Shipping Address"></td>
+                    </tr>
+                </table>
+                <input type="checkbox" required name="conditions">Agree to Terms and Conditions
+                <br><br><br>
+                <input type="submit" value="Create Account">
+            </form>
+        </div>
+    </body>
+</html>
